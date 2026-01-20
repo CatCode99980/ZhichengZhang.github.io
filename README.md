@@ -1,2 +1,2 @@
-# zhichengZhnag.github.io
+# ZhichengZhang.github.io
 My home page
