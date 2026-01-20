@@ -1,3 +1,173 @@
-<div>
-  <h1> This is zzc home page</h1>
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>个人介绍 | Zhicheng Zhang</title>
+    <style>
+        /* 基础样式重置 */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f4f7f9;
+            display: flex;
+            justify-content: center;
+            padding: 40px 20px;
+        }
+
+        /* 容器布局 */
+        .container {
+            max-width: 1000px;
+            width: 100%;
+            display: flex;
+            gap: 30px;
+            flex-wrap: wrap; /* 手机端自动换行 */
+        }
+
+        /* 左侧侧边栏 */
+        .sidebar {
+            flex: 1;
+            min-width: 280px;
+            background: #fff;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            text-align: center;
+            height: fit-content;
+        }
+
+        .avatar {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 5px solid #eef2f5;
+            margin-bottom: 20px;
+        }
+
+        .name {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+            color: #2c3e50;
+        }
+
+        .school-info {
+            text-align: left;
+            margin-top: 20px;
+            padding-top: 20px;
+            border-top: 1px solid #eee;
+        }
+
+        .school-info h3 {
+            font-size: 1rem;
+            color: #7f8c8d;
+            margin-bottom: 8px;
+            text-transform: uppercase;
+        }
+
+        .school-info p {
+            font-size: 0.95rem;
+            margin-bottom: 5px;
+        }
+
+        /* 中间主体内容 */
+        .main-content {
+            flex: 2;
+            min-width: 350px;
+            background: #fff;
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+        }
+
+        .main-content h2 {
+            color: #2c3e50;
+            margin-bottom: 20px;
+            border-left: 5px solid #3498db;
+            padding-left: 15px;
+        }
+
+        .main-content p {
+            margin-bottom: 15px;
+            color: #555;
+            text-indent: 2em; /* 首行缩进 */
+        }
+
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-top: 20px;
+        }
+
+        .skill-tag {
+            background: #ebf5ff;
+            color: #3498db;
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            font-weight: bold;
+        }
+
+        /* 响应式适配 */
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+            }
+            .sidebar, .main-content {
+                flex: none;
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <aside class="sidebar">
+        <img src="https://via.placeholder.com/150" alt="作者头像" class="avatar">
+        <h1 class="name">Zhicheng Zhang</h1>
+        <p style="color: #3498db; font-weight: bold;">开发者 / 学生</p>
+        
+        <div class="school-info">
+            <h3>教育背景</h3>
+            <p><strong>学校：</strong> 某某理工大学</p>
+            <p><strong>专业：</strong> 计算机科学与技术</p>
+            <p><strong>学位：</strong> 本科在读</p>
+            <p><strong>入学年份：</strong> 2022年</p>
+        </div>
+    </aside>
+
+    <main class="main-content">
+        <h2>关于我</h2>
+        <p>
+            你好！我是 Zhicheng，一名对技术充满热情的开发者。我喜欢探索各种编程语言，目前专注于前端开发以及自动化工具的研究。我坚信代码不仅是逻辑的堆砌，更是解决现实问题的艺术。
+        </p>
+        <p>
+            在校期间，我参与了多个开源项目的维护，并在 GitHub 上分享我的学习笔记和小型项目。我擅长发现问题并利用技术手段提高工作效率。
+        </p>
+        
+        <h2 style="margin-top: 30px;">技术栈</h2>
+        <div class="skills">
+            <span class="skill-tag">HTML5 / CSS3</span>
+            <span class="skill-tag">JavaScript</span>
+            <span class="skill-tag">Git / GitHub</span>
+            <span class="skill-tag">Python</span>
+            <span class="skill-tag">VS Code</span>
+        </div>
+
+        <h2 style="margin-top: 30px;">联系方式</h2>
+        <p>📧 邮箱：zhicheng.zhang@example.com</p>
+        <p>🔗 GitHub：<a href="https://github.com/CatCode99980" target="_blank" style="color: #3498db; text-decoration: none;">CatCode99980</a></p>
+    </main>
 </div>
+
+</body>
+</html>
